@@ -1,0 +1,8 @@
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.bak
+app_backup_*.py
+specforge_*backup*.py
+specforge_before_*.py
+specforge_validation_backup.py

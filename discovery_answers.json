@@ -1,0 +1,10 @@
+{
+    "integrations": "microsoft SharePoint and Microsoft Entra ID.",
+    "document_storage": "Approved HR policies and employee handbooks are stored in Microsoft SharePoint. The initial solution should support PDF and DOCX files.",
+    "document_permissions": "",
+    "policy_update_process": "HR policy owners are responsible for reviewing and approving policy updates. When a new version is approved in SharePoint, the system should identify the updated document, re-index its content, and ensure employees receive answers based on the latest approved version.",
+    "citation_requirements": "Each answer should cite the policy document name, the relevant section heading, and the page number when available. Employees should be able to identify and verify the source of every substantive answer.",
+    "insufficient_evidence_handling": "If the approved documents do not contain sufficient evidence, the assistant should clearly state that it cannot answer reliably and direct the employee to HR for clarification. If approved documents conflict, it should not choose one arbitrarily; it should flag the conflict for HR review and cite the conflicting sources.",
+    "authentication": "",
+    "evaluation_dataset": "The evaluation dataset should contain representative employee HR questions covering leave policies, benefits, attendance, workplace procedures, and other common HR topics. Each test question should have a verified expected answer, the relevant approved policy source, and the applicable section or page reference. The dataset should also include questions with insufficient evidence, ambiguous wording, and conflicting policy documents to test whether the assistant handles uncertainty safely. HR reviewers should validate the expected answers before evaluation."
+}
