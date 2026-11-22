@@ -6,7 +6,7 @@ SpecForge AI is a rule-based prototype designed to support the **early-stage AI 
 
 It converts an ambiguous client brief into a structured solution blueprint by extracting requirements, identifying missing information, classifying the AI use case, recommending an architecture, defining an MVP, refining requirements through discovery, assessing architecture coverage, identifying gaps, and generating prioritized implementation actions.
 
-> **Current status:** Prototype complete  
+> **Current status:** Prototype Complete  
 > **Implementation:** Rule-based Python workflow with Streamlit interface
 
 ---
@@ -70,9 +70,9 @@ to:
 
 ---
 
-## 🧠 Core Capabilities
+# 🧠 Core Capabilities
 
-### 1. Requirement Analysis
+## 1. Requirement Analysis
 
 SpecForge extracts structured requirements from a client brief and validates whether enough information is available for solution scoping.
 
@@ -88,7 +88,7 @@ It identifies areas such as:
 
 ---
 
-### 2. AI Use-Case Classification
+## 2. AI Use-Case Classification
 
 The system classifies potential AI applications into categories such as:
 
@@ -104,7 +104,7 @@ It then recommends a suitable solution type based on the requirements identified
 
 ---
 
-### 3. Architecture Recommendation
+## 3. Architecture Recommendation
 
 SpecForge generates a structured architecture blueprint covering:
 
@@ -135,19 +135,19 @@ The architecture is presented as a **recommendation**, rather than claiming that
 
 ---
 
-### 4. MVP Scoping
+## 4. MVP Scoping
 
 The proposed solution is separated into:
 
-**MVP**
+### MVP
 
 Core functionality required for the initial implementation.
 
-**Phase 2**
+### Phase 2
 
 Capabilities that can be introduced after the initial solution is validated.
 
-**Out of Scope**
+### Out of Scope
 
 Requirements that should not be committed to until additional information or client decisions are available.
 
@@ -155,7 +155,7 @@ This helps prevent premature scope expansion.
 
 ---
 
-### 5. Client Discovery
+## 5. Client Discovery
 
 When requirements are incomplete, SpecForge generates discovery questions to obtain the information needed for solution design.
 
@@ -174,7 +174,7 @@ Client answers can then be incorporated into the refined solution proposal.
 
 ---
 
-### 6. Architecture Coverage Assessment
+## 6. Architecture Coverage Assessment
 
 After discovery, confirmed requirements are compared against the proposed architecture.
 
@@ -191,7 +191,7 @@ This separates **requirement certainty** from **architecture completeness**, whi
 
 ---
 
-### 7. Architecture Gap Analysis
+## 7. Architecture Gap Analysis
 
 Architecture gaps are converted into implementation actions.
 
@@ -229,7 +229,7 @@ This turns an architecture review into a practical implementation plan.
 
 ---
 
-### 8. Proposal Generation
+## 8. Proposal Generation
 
 SpecForge can generate a structured solution proposal containing:
 
@@ -245,28 +245,67 @@ SpecForge can generate a structured solution proposal containing:
 
 ---
 
-## 📁 Project Structure
+# 🖥️ Application Walkthrough
 
-```text
-SpecForge-AI/
-│
-├── app.py
-├── specforge.py
-├── test_specforge.py
-├── discovery_answers.json
-├── requirements.txt
-├── README.md
-├── .gitignore
-│
-├── Screenshot 1.png
-├── Screenshot 2.png
-├── Screenshot 3.png
-├── Screenshot 4.png
-├── Screenshot 5.png
-├── Screenshot 6.png
-└── Screenshot 7.png
+The following screenshots demonstrate the SpecForge AI workflow from client brief analysis through architecture assessment and implementation planning.
 
-## 🏗️ Example Use Case: HR Policy Assistant
+## 1. Client Brief & Analysis
+
+The application starts with a client brief and processes it through the SpecForge workflow.
+
+![SpecForge AI — Client Analysis](Screenshot%201.png)
+
+---
+
+## 2. Solution Blueprint
+
+The system produces a structured solution recommendation including the proposed AI solution, architecture direction, MVP scope, and readiness assessment.
+
+![SpecForge AI — Solution Blueprint](Screenshot%202.png)
+
+---
+
+## 3. Discovery & Requirement Refinement
+
+When additional information is required, SpecForge identifies unresolved requirements and generates discovery questions for client validation.
+
+![SpecForge AI — Discovery](Screenshot%203.png)
+
+---
+
+## 4. Discovery-Aware Proposal
+
+Confirmed discovery inputs can be incorporated into a refined solution proposal, making the recommendation more specific to the client's environment.
+
+![SpecForge AI — Refined Proposal](Screenshot%204.png)
+
+---
+
+## 5. Architecture Coverage Overview
+
+The architecture assessment compares confirmed requirements against the proposed solution architecture.
+
+![SpecForge AI — Coverage Overview](Screenshot%205.png)
+
+---
+
+## 6. Requirement Review
+
+Each requirement is reviewed independently based on its discovery status and architecture coverage.
+
+![SpecForge AI — Requirement Review](Screenshot%206.png)
+
+---
+
+## 7. Architecture Gap Analysis
+
+Identified gaps are translated into prioritized implementation actions with recommended next steps.
+
+![SpecForge AI — Gap Analysis](Screenshot%207.png)
+
+---
+
+# 🏗️ Example Use Case: HR Policy Assistant
 
 One of the demonstrated scenarios is an internal **HR Policy Assistant**.
 
@@ -298,7 +337,7 @@ These gaps are subsequently converted into prioritized implementation actions.
 
 ---
 
-## 📊 Example Architecture Assessment
+# 📊 Example Architecture Assessment
 
 A representative assessment can distinguish between:
 
@@ -326,7 +365,7 @@ That distinction is central to the project's architecture-review workflow.
 
 ---
 
-## 🛠️ Technology Stack
+# 🛠️ Technology Stack
 
 | Technology | Purpose |
 |---|---|
@@ -340,7 +379,7 @@ The current prototype primarily uses deterministic, rule-based logic for require
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```text
 SpecForge-AI/
@@ -353,14 +392,13 @@ SpecForge-AI/
 ├── README.md
 ├── .gitignore
 │
-└── screenshots/
-    ├── Screenshot 1.png
-    ├── Screenshot 2.png
-    ├── Screenshot 3.png
-    ├── Screenshot 4.png
-    ├── Screenshot 5.png
-    ├── Screenshot 6.png
-    └── Screenshot 7.png
+├── Screenshot 1.png
+├── Screenshot 2.png
+├── Screenshot 3.png
+├── Screenshot 4.png
+├── Screenshot 5.png
+├── Screenshot 6.png
+└── Screenshot 7.png
 ```
 
 ### `app.py`
@@ -381,7 +419,7 @@ Stored discovery inputs used to refine the generated solution.
 
 ---
 
-## ▶️ Running the Application
+# ▶️ Running the Application
 
 Clone the repository:
 
@@ -406,7 +444,7 @@ The application will open in your browser.
 
 ---
 
-## 🧪 Testing
+# 🧪 Testing
 
 Run the automated tests with:
 
@@ -418,7 +456,7 @@ The test suite validates key stages of the SpecForge workflow and helps ensure t
 
 ---
 
-## ⚠️ Current Implementation & Limitations
+# ⚠️ Current Implementation & Limitations
 
 SpecForge AI is currently a **rule-based prototype**.
 
@@ -440,15 +478,15 @@ These are intentionally outside the scope of the current prototype.
 
 ---
 
-## 🚀 Future Production Evolution
+# 🚀 Future Production Evolution
 
 The prototype provides a foundation that could be extended into a production AI-assisted solution-design platform.
 
-### LLM-Powered Requirement Extraction
+## LLM-Powered Requirement Extraction
 
 Replace deterministic extraction rules with an LLM capable of converting complex client briefs into structured requirements.
 
-### RAG-Based Knowledge Layer
+## RAG-Based Knowledge Layer
 
 Introduce a knowledge base containing:
 
@@ -460,7 +498,7 @@ Introduce a knowledge base containing:
 
 This could allow recommendations to be grounded in reusable organizational knowledge.
 
-### Agentic Workflow
+## Agentic Workflow
 
 Specialized AI agents could eventually support different stages of the process:
 
@@ -476,7 +514,7 @@ Architecture Reviewer
 Proposal Generator
 ```
 
-### Enterprise Integrations
+## Enterprise Integrations
 
 Potential integrations could include:
 
@@ -486,31 +524,33 @@ Potential integrations could include:
 - CRM platforms
 - Project management platforms
 
-### Production Architecture
+## Production Architecture
 
 A future implementation could introduce:
 
 ```text
 Streamlit / Web Frontend
           ↓
-      FastAPI
+       FastAPI
           ↓
-   Agent / LLM Layer
+    Agent / LLM Layer
           ↓
- RAG + Vector Database
+   RAG + Vector Database
           ↓
-     PostgreSQL
+      PostgreSQL
           ↓
-Enterprise Integrations
+ Enterprise Integrations
 ```
 
 with Docker, cloud deployment, authentication, monitoring, and evaluation pipelines.
 
 ---
 
-## 💡 Why This Project
+# 💡 Why This Project
 
-SpecForge AI focuses on a part of AI implementation that is often overlooked: **what happens before development begins**.
+SpecForge AI focuses on a part of AI implementation that is often overlooked:
+
+**What happens before development begins?**
 
 Rather than building only an individual AI model, the project demonstrates a structured approach to:
 
@@ -529,12 +569,28 @@ This makes the project relevant to **AI consulting, business analysis, solution 
 
 ---
 
-## 📌 Project Status
+# 📌 Project Status
 
 **Prototype Complete — Portfolio Ready**
 
-The current prototype demonstrates an end-to-end solution-design workflow from:
+The current prototype demonstrates an end-to-end solution-design workflow:
 
-**Client Brief → Requirements → AI Solution → Architecture → Discovery → Coverage Assessment → Gap Analysis → Implementation Actions**
+```text
+Client Brief
+     ↓
+Requirements
+     ↓
+AI Solution
+     ↓
+Architecture
+     ↓
+Discovery
+     ↓
+Coverage Assessment
+     ↓
+Gap Analysis
+     ↓
+Implementation Actions
+```
 
 The next stage would be replacing deterministic logic with production AI components and real enterprise integrations.
