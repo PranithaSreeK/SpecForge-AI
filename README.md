@@ -245,65 +245,26 @@ SpecForge can generate a structured solution proposal containing:
 
 ---
 
-# 🖥️ Application Walkthrough
+## 📁 Project Structure
 
-The following screenshots show the prototype from client brief analysis through architecture assessment and gap analysis.
-
-### 1. Client Brief & Analysis
-
-The application starts with a client brief and processes it through the SpecForge workflow.
-
-![SpecForge AI — Client Analysis](screenshots/Screenshot%201.png)
-
----
-
-### 2. Solution Blueprint
-
-The system produces a structured solution recommendation including the proposed AI solution, architecture direction, MVP scope, and readiness assessment.
-
-![SpecForge AI — Solution Blueprint](screenshots/Screenshot%202.png)
-
----
-
-### 3. Discovery & Requirement Refinement
-
-When additional information is required, SpecForge identifies unresolved requirements and generates discovery questions for client validation.
-
-![SpecForge AI — Discovery](screenshots/Screenshot%203.png)
-
----
-
-### 4. Discovery-Aware Proposal
-
-Confirmed discovery inputs can be incorporated into a refined solution proposal, making the recommendation more specific to the client's environment.
-
-![SpecForge AI — Refined Proposal](screenshots/Screenshot%204.png)
-
----
-
-### 5. Architecture Coverage Overview
-
-The architecture assessment compares the confirmed requirements against the proposed solution architecture.
-
-![SpecForge AI — Coverage Overview](screenshots/Screenshot%205.png)
-
----
-
-### 6. Requirement Review
-
-Each requirement is reviewed independently based on its discovery status and architecture coverage.
-
-![SpecForge AI — Requirement Review](screenshots/Screenshot%206.png)
-
----
-
-### 7. Architecture Gap Analysis
-
-Identified gaps are translated into prioritized implementation actions with recommended next steps.
-
-![SpecForge AI — Gap Analysis](screenshots/Screenshot%207.png)
-
----
+```text
+SpecForge-AI/
+│
+├── app.py
+├── specforge.py
+├── test_specforge.py
+├── discovery_answers.json
+├── requirements.txt
+├── README.md
+├── .gitignore
+│
+├── Screenshot 1.png
+├── Screenshot 2.png
+├── Screenshot 3.png
+├── Screenshot 4.png
+├── Screenshot 5.png
+├── Screenshot 6.png
+└── Screenshot 7.png
 
 ## 🏗️ Example Use Case: HR Policy Assistant
 
